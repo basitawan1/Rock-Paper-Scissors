@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-container {
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background: #1707f7;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(253, 252, 252);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Scoreboard */
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-size: 2em;
+    background: #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+  }
+  
+  /* Choices */
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .choice img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .choice:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Result */
+  .result {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #game-result {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .score {
+      font-size: 1.5em;
+      padding: 5px 10px;
+    }
+  
+    .choice img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  
